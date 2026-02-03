@@ -1,5 +1,9 @@
 # FOCUS: Efficient Keyframe Selection for Long Video Understanding
 
+> 🎉 **NEWS**: Our paper has been accepted by ICLR 2026! 
+> 
+> 📄 [Read the paper on OpenReview](https://openreview.net/forum?id=1OQKqLFcbB)
+
 ![FOCUS Framework](fig/framework.png)
 
 Multimodal large language models (MLLMs) represent images and video frames as visual tokens. Scaling from single images to hour-long videos, however, inflates the token budget far beyond practical limits. Popular pipelines therefore either uniformly subsample or apply keyframe selection with retrieval-style scoring using smaller vision-language models. However, these keyframe selection methods still rely on pre-filtering before selection to reduce the inference cost and can miss the most informative moments.
@@ -48,6 +52,21 @@ FOCUS generates the following outputs:
   - Video metadata
 - `extraction_stats.json`: Statistics about the extraction process
 
+
+## Citation
+
+If you find FOCUS useful for your research, please cite our paper:
+
+```bibtex
+@inproceedings{
+ziruiz2026focus,
+title={{FOCUS}: Efficient Keyframe Selection for Long Video Understanding},
+author={Zirui Zhu and Hailun Xu and Yang Luo and Yong Liu and Kanchan Sarkar and Zhenheng Yang and Yang You},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=1OQKqLFcbB}
+}
+```
 
 ## Acknowledgments
 
